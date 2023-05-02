@@ -16,6 +16,10 @@ tokenomics_button.addEventListener('click', () => {
     const tokenomics_section = document.getElementById('tokenomics');
     tokenomics_section.scrollIntoView({ behavior: 'smooth' });
 });
+roadmap_button.addEventListener('click', () => {
+    const roadmap_section = document.getElementById('roadmap');
+    roadmap_section.scrollIntoView({ behavior: 'smooth' });
+});
 bozo_logo.addEventListener('click', () => {
     playAudio('../assets/Bozo - Sound Effect.mp3');
 });

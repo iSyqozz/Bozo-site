@@ -35,12 +35,9 @@ body{
     color: white;
 }
 
-.header .header-name{
+.header-name{
     font-size: 50;
     margin-right: 40px;
-}
-
-.header .header-name{
     cursor: default;
     color: black;
 }
@@ -57,8 +54,6 @@ body{
 .buy-now:hover{
     border: 1px solid white;
 }
-
-
 
 
 .section1{
@@ -177,6 +172,9 @@ body{
     .buy-now {
       display: none;
     }
+    .header-name{
+        display: none;
+    }
     .logo-first{
         width: 150px;
         height: 150px;
@@ -186,8 +184,8 @@ body{
         margin-top: 100px;
         margin-left: 5px ;
     }
-
     .about-us-info{
         font-size: 20;
     }
+
   }

@@ -20,6 +20,11 @@ tokenomics_button.addEventListener('click', ()=>{
     tokenomics_section.scrollIntoView({behavior:'smooth'})
 })
 
+roadmap_button.addEventListener('click', ()=>{
+    const roadmap_section = document.getElementById('roadmap') as HTMLElement;
+    roadmap_section.scrollIntoView({behavior:'smooth'})
+})
+
 bozo_logo.addEventListener('click',()=>{
     playAudio('../assets/Bozo - Sound Effect.mp3');
 })
