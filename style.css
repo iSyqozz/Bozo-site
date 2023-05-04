@@ -2,6 +2,272 @@
     font-family: chalk;
     src: url('./assets/Chalkduster.ttf');
 }
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+@keyframes skew {
+  0% {
+    transform: skew(0deg);
+  }
+  10% {
+    transform: skew(20deg);
+  }
+  20% {
+    transform: skew(-15deg);
+  }
+  30% {
+    transform: skew(10deg);
+  }
+  40% {
+    transform: skew(-5deg);
+  }
+  50% {
+    transform: skew(0deg);
+  }
+  100% {
+    transform: skew(0deg);
+  }
+}
+@keyframes float2 {
+    0% {
+      transform: translate(-50%,0);
+    }
+    50% {
+      transform: translate(-50%,-10px);
+    }
+    100% {
+      transform: translate(-50%,0);
+    }
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes float3 {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes freefall {
+
+    0%{
+        margin-top: 0px;
+    }
+
+
+    100%{
+        margin-top: -20px;
+    }
+
+    
+  }
+
+  @keyframes not-freefall {
+
+    0%{
+        margin-top: -20px;
+    }
+
+
+    100%{
+        margin-top: 0px;
+    }
+
+  }
+  
+
+
+.clouds-first{
+    position: fixed;
+    z-index: 9999999;
+    width: 300px;
+    height: 150px;
+}
+
+.cloud1-first{
+    top: 120px;
+    left: -500px;
+    transition: transform 2s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+.cloud2-first{
+    top: 200px;
+    left: -500px;
+    transition: transform 2.2s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    
+}
+
+.cloud3-first{
+    top: 300px;
+    left: -500px;
+    transition: transform 2.1s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    
+}
+
+.cloud4-first{
+    top: 400px;
+    left: -500px;
+    transition: transform 1.9s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    
+}
+
+.cloud5-first{
+    top: 500px;
+    left: -500px;
+    transition: transform 1.95s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+.cloud6-first{
+    top: 600px;
+    left: -500px;
+    transition: transform 2.05s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    
+}
+
+.cloud7-first{
+    top: 700px;
+    left: -500px;
+    transition: transform 2s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    
+}
+
+.cloud8-first{
+    top: 800px;
+    left: -500px;
+    transition: transform 2.3s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+.cloud9-first{
+    top: 150px;
+    left: -500px;
+    transition: transform 2.25s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+.cloud10-first{
+    top: 250px;
+    left: -500px;
+    transition: transform 1.85s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    
+}
+
+.cloud11-first{
+    top: 350px;
+    left: -500px;
+    transition: transform 1.82s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    
+}
+
+.cloud12-first{
+    top: 450px;
+    left: -500px;
+    transition: transform 2.07s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+.cloud13-first{
+    top: 650px;
+    left: -500px;
+    transition: transform 2.12s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+.clouds{
+    position: fixed;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.clouds-freefall{
+    animation: freefall 0.7s cubic-bezier(.39,.14,0,1.17) forwards !important;
+}
+
+.clouds-not-freefall{
+    animation: not-freefall 0.7s cubic-bezier(.39,.14,0,1.17) forwards !important;
+}
+
+.cloud1{
+    top: 50px;
+    width: 200px;
+    height: 100px;
+
+    left: 70%;
+    animation: float 3.3s ease-in-out infinite;
+}
+
+.cloud2{
+    top: 200px;
+    width: 200px;
+    height: 100px;
+    left: 30%;
+    animation: float 3s ease-in-out infinite;
+
+}
+
+.cloud3{
+    top: 100px;
+    width: 150px;
+    height: 75px;
+    left: 1%;
+    animation: float 2s ease-in-out infinite;
+
+}
+
+.cloud4{
+    top: 400px;
+    width: 200px;
+    height: 100px;
+    left: 10%;
+    animation: float 2.8s ease-in-out infinite;
+}
+
+.cloud5{
+    top: 500px;
+    width: 200px;
+    height: 100px;
+    left: 30%;
+    animation: float 2.5s ease-in-out infinite;
+}
+
+.cloud6{
+    top: 700px;
+    width: 250px;
+    height: 125px;
+    left: 50%;
+    animation: float 4s ease-in-out infinite;
+
+}
+
+.cloud7{
+    top: 300px;
+    width: 250px;
+    height: 125px;
+    left: 75%;
+    animation: float 3.2s ease-in-out infinite;
+}
+
 
 body{
     width: 100%;
@@ -9,13 +275,50 @@ body{
     margin: 0;
     padding: 0;
     background-attachment: fixed;
-    background-color: rgb(104, 206, 247);
-    overflow: auto;
+    background-color: #82ccfd;
+    overflow-x: hidden;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-50%);
+  }
+}
+
+.locked-content{
+    display: none;
+}
+
+.floating-commands{
+    opacity: 0;
+    top: 60%;
+    position: absolute;
+    width: fit-content;
+    height: 200px;
+    border-radius: 60px ;
+    font-family: chalk;
+    font-size: 60;
+    color: red;
+    margin-top: 35px;
+    margin-right: 5%;
+    animation: float 2s ease-in-out infinite;
+    transition: opacity 0.5s ease-in-out;
+    text-align: center;
+}
+
+.token-address{
+    opacity: 1;
+    top: 60%;
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    color: white;
+    background: #071920;
 }
 
 .header{
     width: 100%;
-    height: 120px;
+    height: 50px;
     border-bottom: 1px solid black;
     box-shadow: 1px 1px 8px black;
 
@@ -24,15 +327,34 @@ body{
     align-items: center;
     flex-direction: row;
     font-family: chalk;
+    background: #3f758a;
+    transition: height 0.5s ease-in-out;
+}
+
+.header-appear{
+    height: 120px
 }
 .header-ele{
+    opacity: 0;
     margin-left: 20px ;
     color: black;
+    transition: opacity 0.5s ease-in-out;
 }
+
+.header-ele-appear{
+    opacity: 1;
+}
+
+
+
 
 .header-ele:hover{
     cursor: pointer;
     color: white;
+    animation-name: skew;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
 }
 
 .header-name{
@@ -64,6 +386,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    padding-bottom: 540px;
 }
 
 .section3{
@@ -97,17 +420,18 @@ body{
 }
 
 .logo-first{
+    opacity: 0;
     width: 300px;
     height: 300px;
     border-radius: 50%;
     left: 70vw;
     top: 10vw;
-}
-.logo-first:hover{
-    cursor: pointer;
+    transition: transform 1.3s cubic-bezier(1.000, 0.120, 0.400, 1.580), opacity 1.3s ease-in-out;
+    transform: translateX(-250%);
 }
 
 .first-description{
+    opacity: 0;
     width: 450px;
     height: 200px;
     border-radius: 60px ;
@@ -116,6 +440,25 @@ body{
     color: black;
     margin-top: 35px;
     margin-right: 5%;
+    transition: opacity 0.2s cubic-bezier(0.445, 0.065, 1.000, 0.030);
+}
+
+.logo-in-action{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.logo-in-action-finish{
+    cursor: pointer;
+    animation-name: skew;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+}
+
+.description1-in-action{
+    opacity: 1;
+    animation: float 2s ease-in-out infinite;
 }
 
 .about-us-header{
@@ -129,12 +472,43 @@ body{
     padding-bottom: 10px;
 }
 
+.section3 .about-us-info span{
+    opacity: 0;
+}
+.bozo-welcome1{
+    position: absolute;
+    height: 200px;
+    left: 0;
+    bottom: 5px;
+    transition: transform 1.3s cubic-bezier(0.445, 0.065, 1.000, 0.030);
+}
+.bozo-welcome2{
+    position: absolute;
+    height: 200px;
+    left: 0;
+    bottom: -10px;
+    transition: transform 1.3s cubic-bezier(0.445, 0.065, 1.000, 0.030);
+}
+.bozo-welcome3{
+    position: absolute;
+    height: 200px;
+    left: 0;
+    bottom: 0px;
+    transition: transform 1.3s cubic-bezier(0.445, 0.065, 1.000, 0.030);
+}
+
+
 .about-us-info{
+    position: relative;
     font-family: chalk;
-    color: black;
+    color: white;
     font-size: 30;
     text-align: center;
     margin-bottom: 50px;
+    background-color: #3f758a;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    width: 100%;
 }
 
 .nomics{
@@ -143,6 +517,7 @@ body{
 
 
 .footer{
+    position: relative;
     font-family: chalk;
     width: 100%;
     text-align: center;
@@ -150,6 +525,33 @@ body{
     padding-top: 5px;
     padding-bottom: 5px;
     color: white;
+}
+
+.disclaimer{
+    position: relative;
+    width: 75%;
+    height: 250px;
+    background: #071920;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+    text-align: center;
+    color: white;
+    font-family: chalk;
+    font-size: 20;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.disclaimer .disclaimer-title{
+    font-size: 30;
 }
 
 .twitter-logo{
@@ -185,6 +587,20 @@ body{
         margin-left: 5px ;
     }
     .about-us-info{
+        font-size: 20;
+    }
+    .floating-commands{
+        font-size: 25;
+    }
+
+    .clouds{
+        display: none;
+    }
+
+    .disclaimer-content{
+        font-size: 13;
+    }
+    .disclaimer .disclaimer-title{
         font-size: 20;
     }
 
