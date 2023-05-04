@@ -121,6 +121,10 @@ function main() {
                         const locked_content = document.querySelector('.locked-content');
                         locked_content.style.display = 'block';
                         first_section.style.paddingBottom = '200px';
+                        commands.classList.add('token-address');
+                        commands.classList.remove('floating-commands');
+                        commands.innerHTML = `<a href="https://solscan.io/token/Gq6QdwRBU4Tkjsn3Be76CmB6DGoJSibWmfQDPcpEGunt" target="_blank"> Official Wallet Address </a>`;
+                        commands.style.opacity = '1';
                     }, 500);
                 }
             };

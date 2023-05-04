@@ -198,6 +198,7 @@
     position: fixed;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    z-index: -1;
 }
 
 .clouds-freefall{
@@ -310,10 +311,21 @@ body{
     opacity: 1;
     top: 60%;
     position: absolute;
-    width: 300px;
-    height: 150px;
-    color: white;
+    width: 350px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 5rem;
     background: #071920;
+    animation: float 2s ease-in-out infinite;
+    font-size: 25;
+    text-align: center;
+    text-decoration: none;
+}
+
+.token-address a{
+    text-decoration: none;
+    color: white;
+    font-family: chalk;
 }
 
 .header{
@@ -465,7 +477,7 @@ body{
     font-family: chalk;
     color: white;
     font-size: 35;
-    background: #3f758a;
+    background: #071920;
     width: 100%;
     text-align: center;
     padding-top: 10px;
@@ -473,7 +485,7 @@ body{
 }
 
 .section3 .about-us-info span{
-    opacity: 0;
+    opacity: 1;
 }
 .bozo-welcome1{
     position: absolute;
