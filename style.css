@@ -287,7 +287,7 @@ body{
 }
 
 .locked-content{
-    display: none;
+    /*display: none;*/
 }
 
 .floating-commands{
@@ -385,6 +385,10 @@ body{
     right: 10px;
 }
 
+.buy-now a{
+    text-decoration: none;
+}
+
 .buy-now:hover{
     border: 1px solid white;
 }
@@ -401,16 +405,6 @@ body{
     padding-bottom: 540px;
 }
 
-.section3{
-    overflow: auto;
-    width: 100%;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-
 .section2{
     overflow: auto;
     width: 100%;
@@ -424,7 +418,7 @@ body{
 .section3{
     overflow: auto;
     width: 100%;
-    height: 700px;
+    height: 820px;
     display: flex;
     justify-content: center;
     align-items: center;

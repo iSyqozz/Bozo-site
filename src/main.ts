@@ -135,7 +135,6 @@ function main(){
             commands.textContent = 'NOW BONK MR BOZO UP THERE IF YOU ARE READY TO BE A BOZO!';
             const temp = ()=>{
                 if (locked){
-                    playAudio('../assets/Bozo - Sound Effect.mp3');
                     locked = false
                     commands.style.opacity = '0';
                     
@@ -153,7 +152,7 @@ function main(){
                         first_section.style.paddingBottom = '200px';
                         commands.classList.add('token-address');
                         commands.classList.remove('floating-commands')
-                        commands.innerHTML = `<a href="https://solscan.io/token/Gq6QdwRBU4Tkjsn3Be76CmB6DGoJSibWmfQDPcpEGunt" target="_blank"> Official Wallet Address </a>`   
+                        commands.innerHTML = `<a target="_blank" href="https://solscan.io/token/2ViBAzDADjJR4PV6p63oSByQQPrrkjrcFhWXzCd2P7Mc">Official Token Address</a>`   
                         commands.style.opacity = '1';                        
                         
                     }, 500);
@@ -181,6 +180,11 @@ function main(){
         const roadmap_section = document.getElementById('roadmap') as HTMLElement;
         roadmap_section.scrollIntoView({behavior:'smooth'})
     })
+
+    bozo_logo.addEventListener('click',()=>{
+        playAudio('../assets/Bozo - Sound Effect.mp3');
+    })
+
 
     
     setTimeout(() => {
