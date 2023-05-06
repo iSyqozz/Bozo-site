@@ -287,7 +287,7 @@ body{
 }
 
 .locked-content{
-    /*display: none;*/
+    display: none;
 }
 
 .floating-commands{
