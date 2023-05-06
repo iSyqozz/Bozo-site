@@ -143,7 +143,7 @@ function main() {
         roadmap_section.scrollIntoView({ behavior: 'smooth' });
     });
     bozo_logo.addEventListener('click', () => {
-        playAudio('../assets/Bozo - Sound Effect.mp3');
+        playAudio('../assets/New Recording 8.m4a');
     });
     setTimeout(() => {
         const top_bar = document.querySelector('.header');

@@ -182,7 +182,7 @@ function main(){
     })
 
     bozo_logo.addEventListener('click',()=>{
-        playAudio('../assets/Bozo - Sound Effect.mp3');
+        playAudio('../assets/New Recording 8.m4a');
     })
 
 
