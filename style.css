@@ -320,6 +320,9 @@ body{
     font-size: 25;
     text-align: center;
     text-decoration: none;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
 }
 
 .token-address a{
@@ -575,6 +578,25 @@ body{
 }
 
 
+.image-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50% ;
+    gap: 50px;
+}
+
+.image-wrapper img{
+    aspect-ratio: 9/6;
+    width: 100%;
+    border: 3px solid #3f758a;
+}
+
+
 
 @media only screen and (max-width: 750px) {
     .buy-now {
@@ -608,6 +630,19 @@ body{
     }
     .disclaimer .disclaimer-title{
         font-size: 20;
+    }
+
+    .image-wrapper{
+        width: 75% ;
+        gap: 50px;
+    }
+
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .image-wrapper{
+        width: 40% ;
+        gap: 50px;
     }
 
   }
